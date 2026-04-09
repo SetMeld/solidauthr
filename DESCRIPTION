@@ -1,16 +1,18 @@
 Package: solidauthr
 Type: Package
 Title: Solid OIDC Client Credentials Authentication for R
-Version: 0.0.0.9000
+Version: 0.1.0
 Description: Authenticates against Community Solid Server identity
     providers using OAuth client credentials with DPoP proofs and
     performs authenticated requests against Solid resources.
-Authors@R: person(
-    "OXFORDIA Project",
-    email = "opensource@oxfordia.invalid",
-    role = c("aut", "cre")
+Authors@R: c(
+    person(
+      given = "SetMeld Inc.",
+      email = "jackson@setmeld.com",
+      role = c("aut", "cre", "cph")
+    )
   )
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 Depends:
     R (>= 4.1.0)
@@ -24,3 +26,5 @@ Imports:
 Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+URL: https://github.com/SetMeld/solidauthr
+BugReports: https://github.com/SetMeld/solidauthr/issues
