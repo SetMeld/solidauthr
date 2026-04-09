@@ -1,1 +1,11 @@
 ^dist$
+^\.rlib($|/)
+^\.lintr$
+^\.git$
+^\.gitignore$
+^\.Rbuildignore$
+^\.Rcheck$
+^\.\.[Rr]check($|/)
+^cran-comments\.md$
+^project\.json$
+^scripts($|/)

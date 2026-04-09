@@ -4,6 +4,14 @@
 
 It discovers the issuer configuration, generates a session-scoped DPoP key pair, requests DPoP-bound access tokens with the `webid` scope, and attaches fresh DPoP proofs to each outgoing Solid request.
 
+## Installation
+
+Install the release version from CRAN:
+
+```r
+install.packages("solidauthr")
+```
+
 ## Usage
 
 ```r

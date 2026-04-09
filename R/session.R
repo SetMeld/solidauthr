@@ -1,4 +1,4 @@
-SolidSession <- R6::R6Class(
+SolidSession <- R6Class(
   "SolidSession",
   public = list(
     issuer = NULL,
@@ -338,6 +338,39 @@ SolidSession <- R6::R6Class(
   )
 )
 
+#' Create a Solid OIDC session
+#'
+#' Discovers an issuer's OpenID configuration, creates a session-scoped DPoP
+#' key, obtains DPoP-bound access tokens with the `webid` scope, and attaches
+#' fresh DPoP proofs to outgoing Solid requests.
+#'
+#' @param issuer A length-1 character vector giving the issuer base URL for a
+#'   Community Solid Server identity provider.
+#' @param client_id A length-1 character vector giving the OAuth client ID.
+#' @param client_secret A length-1 character vector giving the OAuth client
+#'   secret.
+#' @param safety_margin A number of seconds to subtract from token expiry when
+#'   deciding whether a token should be refreshed.
+#'
+#' @return An R6 `SolidSession` object with methods for authenticated HTTP
+#'   requests and access-token retrieval.
+#'
+#' @examples
+#' issuer <- Sys.getenv("SOLID_ISSUER")
+#' client_id <- Sys.getenv("SOLID_CLIENT_ID")
+#' client_secret <- Sys.getenv("SOLID_CLIENT_SECRET")
+#'
+#' if (nzchar(issuer) && nzchar(client_id) && nzchar(client_secret)) {
+#'   session <- solid_session(
+#'     issuer = issuer,
+#'     client_id = client_id,
+#'     client_secret = client_secret
+#'   )
+#'
+#'   session$token()
+#' }
+#'
+#' @export
 solid_session <- function(
   issuer,
   client_id,

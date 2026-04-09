@@ -1,2 +1,6 @@
 .rlib
 dist
+*.Rcheck
+.RData
+.Rhistory
+*.tar.gz
