@@ -1,3 +1,5 @@
+# solidauthr 0.1.1
+
 # solidauthr 0.1.0
 
 - Initial development version of `solidauthr`.
