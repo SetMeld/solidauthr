@@ -1,4 +1,4 @@
-# solidauthr (development version)
+# solidauthr 0.1.2
 
 # solidauthr 0.1.1
 
