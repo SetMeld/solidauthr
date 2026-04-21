@@ -1,6 +1,6 @@
 Package: solidauthr
 Type: Package
-Title: Solid OIDC Client Credentials Authentication for R
+Title: Solid OIDC Client Credentials Authentication
 Version: 0.1.2
 Description: Authenticates against Community Solid Server identity
     providers using OAuth client credentials with DPoP proofs and
