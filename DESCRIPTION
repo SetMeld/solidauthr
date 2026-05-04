@@ -8,7 +8,7 @@ Description: Authenticates against Community Solid Server identity
 Authors@R: c(
     person(
       given = "Jackson",
-      family = "Morgan"
+      family = "Morgan",
       email = "jackson@setmeld.com",
       role = c("aut", "cre", "cph")
     )
